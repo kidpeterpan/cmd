@@ -1,0 +1,7 @@
+# change brightness 0-1
+xrandr --output DSI-1 --brightness 1
+
+# command to open network manager
+nm-applet 
+
+
