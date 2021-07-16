@@ -1,0 +1,2 @@
+# set up wifi adapter card
+https://github.com/lwfinger/rtw89
