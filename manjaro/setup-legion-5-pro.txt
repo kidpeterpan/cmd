@@ -16,6 +16,10 @@ sudo pacman -S i3-gaps
 sudo pacman -S i3status
 pacman -S dmenu-manjaro
 # set .config/i3/config to open 'dmenu_recency' instead
+# install bumblebee-status https://github.com/tobi-wan-kenobi/bumblebee-status
+# install font-awesome https://aur.archlinux.org/packages/ttf-font-awesome-4/
+
+# change background with 'feh'
 
 # brightness fix
 # add param to `/etc/default/grub`
