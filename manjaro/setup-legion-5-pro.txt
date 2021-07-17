@@ -27,3 +27,5 @@ pacman -S dmenu-manjaro
 sudo update-grub
 sudo pacman -S xorg-xrandr
 # then can use --brightness to adjust the display's brightness
+
+# for easy to run custom cmd action replace 'dmenu_recency' with 'i3-dmenu-desktop'
