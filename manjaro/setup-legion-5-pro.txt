@@ -33,3 +33,6 @@ sudo pacman -S xorg-xrandr
 # install zsh https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
 
 # next install compton to custom windows to transparent
+
+# next disable beep sound
+
