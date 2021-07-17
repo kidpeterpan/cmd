@@ -31,3 +31,5 @@ sudo pacman -S xorg-xrandr
 # for easy to run custom cmd action replace 'dmenu_recency' with 'i3-dmenu-desktop'
 
 # install zsh https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
+
+# next install compton to custom windows to transparent
