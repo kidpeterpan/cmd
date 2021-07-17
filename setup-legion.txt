@@ -1,5 +1,0 @@
-# set up wifi adapter card
-https://github.com/lwfinger/rtw89
-
-# brightness fix
-https://www.debugpoint.com/2016/10/2-ways-fix-laptop-brightness-problem-ubuntu-linux/

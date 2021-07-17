@@ -1,0 +1,18 @@
+# install nvidia driver via mhwd
+mhwd
+mhwd -i pci nvidia-video
+
+# install wifi driver
+# linux headers must compat with 'uname -r'
+# source reference https://github.com/lwfinger/rtw89
+# on 20210717 work fine with
+# linux-api-headers 5.12.3-1
+# linux510-headers 5.10.49-1
+sudo pacman -Q | grep headers 
+sudo pacman -S base-devel git make gcc linux-headers
+
+# install i3
+sudo pacman -S i3-gaps
+sudo pacman -S i3status
+pacman -S dmenu-manjaro
+# set .config/i3/config to open 'dmenu_recency' instead
