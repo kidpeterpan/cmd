@@ -25,3 +25,6 @@ call plug#end()
 
 " Key Mapping
 nnoremap <silent> <C-p> :FZF<CR>
+
+" Vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax':'markdown','ext':'.md'}]
