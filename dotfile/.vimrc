@@ -2,6 +2,7 @@ set encoding=UTF-8
 set number
 set relativenumber
 set nocompatible
+
 " Theme
 set background=dark
 colorscheme gruvbox 
@@ -20,3 +21,6 @@ Plug 'junegunn/fzf'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
 call plug#end()
+
+" Key Mapping
+nnoremap <silent> <C-p> :FZF<CR>
