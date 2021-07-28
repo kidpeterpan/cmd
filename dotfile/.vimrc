@@ -20,6 +20,7 @@ Plug 'fatih/vim-go'
 Plug 'junegunn/fzf'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Key Mapping
