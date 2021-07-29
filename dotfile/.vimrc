@@ -7,8 +7,8 @@ set nocompatible
 set background=dark
 colorscheme gruvbox 
 
+filetype plugin on
 syntax on
-filetype on 
 
 " Plug
 call plug#begin()
@@ -27,4 +27,4 @@ call plug#end()
 nnoremap <silent> <C-p> :FZF<CR>
 
 " Vimwiki
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax':'markdown','ext':'.md'}]
+let g:vimwiki_list = [{'path': "~/vimwiki/", 'syntax':'markdown','ext':'.md'}]
