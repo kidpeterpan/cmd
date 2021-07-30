@@ -3,6 +3,8 @@ scriptencoding utf-8
 set number
 set relativenumber
 set nocompatible
+set guifont=Monaco:h14
+set wildmenu
 
 " Theme
 set background=dark
