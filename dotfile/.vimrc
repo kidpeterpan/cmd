@@ -18,7 +18,6 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf'
 Plug 'voldikss/vim-floaterm'
