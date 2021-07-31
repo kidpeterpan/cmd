@@ -181,7 +181,7 @@ bar {
 	font pango:DejaVu Sans Mono, FontAwesome 7 
 	position top
 	tray_output DP-4 # display for show application tray
-        status_command /usr/bin/bumblebee-status \
+        status_command $(which bumblebee-status) \
 	   -m disk:home cpu memory nvidiagpu layout amixer battery time date\
 	   -p time.format="%H:%M" date.format="%a, %b %d %Y" \
 	      cpu.interval=5s memory.interval=1m battery.interval 1m \
