@@ -23,6 +23,7 @@ Plug 'junegunn/fzf'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 " Key Mapping
