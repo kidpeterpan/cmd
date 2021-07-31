@@ -26,7 +26,9 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Key Mapping
-nnoremap <silent> <C-p> :FZF<CR>
-
+" find file with control + p
+nnoremap <silent> <C-p> :FZF<CR> 
+" copy to clipboard (gvim required)
+noremap <C-c> "+y 
 " Vimwiki
 let g:vimwiki_list = [{'path': "~/vimwiki/", 'syntax':'markdown','ext':'.md'}]
