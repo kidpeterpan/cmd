@@ -192,13 +192,6 @@ bar {
 gaps inner 5 
 gaps outer 5 
 
-# execute - exec for only init - exec_always do every time i3 restart
-# display
-set $brightness 0.6
-exec_always xrandr --output DP-4 --brightness $brightness  
-exec_always feh --bg-fill $HOME/Pictures/00.jpg
-exec compton --config $HOME/.compton.conf 
-
 # disable title
 default_border pixel 2
 default_floating_border pixel 1
@@ -206,5 +199,14 @@ default_floating_border pixel 1
 # set some nice colors
 client.focused   #008B8B #008B8B #040404
 
-# custom key
+# {{ EXECUTION }}
+# execute - exec for only init - exec_always do every time i3 restart
+# display
+set $brightness 0.6
+exec_always xrandr --output DP-4 --brightness $brightness  
+exec_always feh --bg-fill $HOME/Pictures/00.jpg
+exec compton --config $HOME/.compton.conf 
+exec ~/.dropbox-dist/dropboxd
+
+# {{ KEY BINDING }}
 bindsym $mod+Control+l exec i3lock-fancy
