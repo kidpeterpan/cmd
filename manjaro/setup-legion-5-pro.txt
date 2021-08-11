@@ -2,6 +2,7 @@
 mhwd
 mhwd -i pci nvidia-video
 
+
 # install wifi driver
 # linux headers must compat with 'uname -r'
 # source reference https://github.com/lwfinger/rtw89
@@ -9,9 +10,13 @@ mhwd -i pci nvidia-video
 # linux-api-headers 5.12.3-1
 # linux510-headers 5.10.49-1
 sudo pacman -Q | grep headers 
-sudo pacman -S base-devel git make gcc linux-headers
+sudo pacman -S linux-headers # install version linux510-headers
+sudo pacman -Syu
+sudo pacman -S base-devel git make gcc 
 
-# install i3
+
+# * can skip this part if install via manjaro i3 *
+# install i3 
 sudo pacman -S i3-gaps
 sudo pacman -S i3status
 pacman -S dmenu-manjaro
@@ -19,7 +24,9 @@ pacman -S dmenu-manjaro
 # install bumblebee-status https://github.com/tobi-wan-kenobi/bumblebee-status
 # install font-awesome https://aur.archlinux.org/packages/ttf-font-awesome-4/
 
+
 # change background with 'feh'
+
 
 # brightness fix
 # add param to `/etc/default/grub`
