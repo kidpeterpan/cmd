@@ -13,6 +13,9 @@ sudo pacman -Q | grep headers
 sudo pacman -S linux-headers # install version linux510-headers
 sudo pacman -Syu
 sudo pacman -S base-devel git make gcc 
+cd rtw89
+make
+sudo make install
 
 
 # * can skip this part if install via manjaro i3 *
