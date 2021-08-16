@@ -1,3 +1,5 @@
+alias bfg="java -jar ~/Devtools/bfg.jar"
+
 export HOMEBREW_NO_AUTO_UPDATE=1
 # shortcut
 # If you come from bash you might have to change your $PATH.
