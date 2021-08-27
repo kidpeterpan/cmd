@@ -23,6 +23,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go'
+" https://github.com/junegunn/fzf#installation
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf'
 Plug 'voldikss/vim-floaterm'
 Plug 'vimwiki/vimwiki'
