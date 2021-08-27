@@ -1,52 +1,40 @@
-set encoding=utf-8
-set fileencodings=utf-8
-set number
-set relativenumber
+" {{ Set }}
 set nocompatible
+filetype plugin on
+syntax on
+set number
 set wildmenu
+set relativenumber
 set ignorecase
 set smartcase
 
 
-" {{ Theme }}
-"
-set background=dark
-colorscheme gruvbox
-filetype plugin on
-syntax on
-
-
-" {{ Plug }}
-"
-call plug#begin()
+" {{ Plugins }}
+call plug#begin('~/.config/nvim/plugged')
+Plug 'vimwiki/vimwiki'
+Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'preservim/nerdtree'
+Plug 'Chiel92/vim-autoformat'
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf'
-Plug 'voldikss/vim-floaterm'
-Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-fugitive'
-Plug 'jremmen/vim-ripgrep'
-Plug 'pangloss/vim-javascript' " Javascript support
-Plug 'leafgarland/typescript-vim' " TypeScript syntax
-Plug 'maxmellon/vim-jsx-pretty' " JS and JSX syntax
-Plug 'preservim/tagbar' " tag on side bar (require ctag)
+Plug 'fatih/vim-go'
+Plug 'junegunn/fzf'
 Plug 'iamcco/markdown-preview.nvim',{'do':{->mkdp#util#install()},'for':['markdown','vim-plug']}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 
 " {{ Key Mapping }}
-"
 " find file with control + p
-nnoremap <silent> <C-p> :FZF <CR> 
+nnoremap <silent> <C-p> :FZF <CR>
 " copy to clipboard (gvim required)
-noremap <C-c> "+y 
+noremap <C-c> "+y
 " open markdown preview
 nnoremap <silent> <f3> :MarkdownPreview <CR>
 " stop markdown preview
 nnoremap <silent> <f4> :MarkdownPreviewStop <CR>
+
 
 " {{ Vimwiki }}
 let g:vimwiki_list = [{'path': "~/Dropbox/vimwiki/", 'syntax':'markdown','ext':'.md'}]
@@ -195,7 +183,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-" GoTo code navigation. 
+" GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -299,4 +287,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
