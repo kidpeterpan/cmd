@@ -1,3 +1,17 @@
+" {{ Plugins }}
+call plug#begin('~/.config/nvim/plugged')
+Plug 'vimwiki/vimwiki'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf'
+Plug 'fatih/vim-go'
+Plug 'junegunn/fzf'
+Plug 'iamcco/markdown-preview.nvim',{'do':{->mkdp#util#install()},'for':['markdown','vim-plug']}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
+call plug#end()
+
+
 " {{ Set }}
 set nocompatible
 filetype plugin on
@@ -7,22 +21,8 @@ set wildmenu
 set relativenumber
 set ignorecase
 set smartcase
-
-
-" {{ Plugins }}
-call plug#begin('~/.config/nvim/plugged')
-Plug 'vimwiki/vimwiki'
-Plug 'Valloric/YouCompleteMe'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'Chiel92/vim-autoformat'
-Plug 'fatih/vim-go'
-Plug 'junegunn/fzf'
-Plug 'fatih/vim-go'
-Plug 'junegunn/fzf'
-Plug 'iamcco/markdown-preview.nvim',{'do':{->mkdp#util#install()},'for':['markdown','vim-plug']}
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
+set background=dark
+colorscheme gruvbox
 
 
 " {{ Key Mapping }}
