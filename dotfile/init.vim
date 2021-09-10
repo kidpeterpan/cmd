@@ -22,6 +22,8 @@ set relativenumber
 set ignorecase
 set smartcase
 set background=dark
+set clipboard=unnamed
+lang en_US.UTF-8
 colorscheme gruvbox
 
 
