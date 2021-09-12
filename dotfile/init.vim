@@ -9,6 +9,7 @@ Plug 'junegunn/fzf'
 Plug 'iamcco/markdown-preview.nvim',{'do':{->mkdp#util#install()},'for':['markdown','vim-plug']}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 
@@ -25,6 +26,12 @@ set background=dark
 set clipboard=unnamed
 lang en_US.UTF-8
 colorscheme gruvbox
+
+" {{ NERDTree }}
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 
 " {{ Key Mapping }}
